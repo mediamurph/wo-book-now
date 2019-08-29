@@ -1,7 +1,10 @@
 <?php
 /*
-Plugin Name: Book Now for Welwyn Osteopaths
-Description: Contains the 'Book Now', Phone and Email buttons plus the address of the Welwyn Osteopaths
+Plugin Name:    Book Now for Welwyn Osteopaths
+Description:    Contains the 'Book Now', Phone and Email buttons plus the address of the Welwyn Osteopaths
+URL:            https://github.com/mediamurph/wo-book-now
+Author:         Daniel Pearce
+Author URL:     //mediamurph.com
 */
 
 // Register and load the widget

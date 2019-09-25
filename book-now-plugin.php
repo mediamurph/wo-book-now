@@ -47,15 +47,15 @@ class book_now_widget extends WP_Widget {
   // before and after widget arguments are defined by themes
   echo $args['before_widget'];
   if ( ! empty( $book_btn_txt ) && ! empty( $phone_btn_txt ) && ! empty( $email_btn_txt ) && ! empty( $address ) ) {
-  echo '<ul class="book-btns"><li>';
-  echo '<a href="https://the-osteopathic-centre-welwyn-garden-city.cliniko.com/bookings#service" target="_blank" class="show-for-small-only large button">' . $book_btn_txt . '</a>';
-  echo '<a href="https://the-osteopathic-centre-welwyn-garden-city.cliniko.com/bookings#service" target="_blank" class="show-for-medium-up wp-colorbox-iframe cboxElement expanded large button">' . $book_btn_txt . '</a>';
-  echo '</li><li><a href="tel:' . $phone_number; 
-  echo '" class="expanded medium secondary button">' . $phone_btn_txt;
-  echo '</a></li><li><a href="mailto:' . $email_address;
-  echo '" class="expanded small secondary ghost button">' . $email_btn_txt;
-  echo '</a></li><li><p>' . $address;
-  echo '</p></li></ul>';
+   echo '<ul class="book-btns">';
+   echo '<li class="show-for-small-only"><a href="https://the-osteopathic-centre-welwyn-garden-city.cliniko.com/bookings#service" target="_blank" class="expanded large button">' . $book_btn_txt . '</a></li>';
+   echo '<li class="show-for-medium-up"><a href="https://the-osteopathic-centre-welwyn-garden-city.cliniko.com/bookings#service" target="_blank" class="wp-colorbox-iframe cboxElement expanded large button">' . $book_btn_txt . '</a></li>';
+   echo '</li><li><a href="tel:' . $phone_number; 
+   echo '" class="expanded medium secondary button">' . $phone_btn_txt;
+   echo '</a></li><li><a id="wo-email-us-button" href="mailto:' . $email_address;
+   echo '" class="expanded small secondary ghost button">' . $email_btn_txt;
+   echo '</a></li><li><p>' . $address;
+   echo '</p></li></ul>';
  }
   // This is where you run the code and display the output
   echo __( '', 'book_now_widget_domain' );
